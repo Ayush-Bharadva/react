@@ -2,23 +2,22 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
+	console.log("rendered");
+
 	let [count, setCounter] = useState(0);
 
 	let incrementValue = () => {
 		if (count < 20) {
 			// all the below functions will count as one call
 			setCounter(count + 1);
-			setCounter(count + 1);
-			setCounter(count + 1);
-			setCounter(count + 1);
-			setCounter(count + 1);
 
-			// to make setCounter differential pass a callback in it(see below)
-			setCounter((counter) => counter + 1);
-			setCounter((counter) => counter + 1);
-			setCounter((counter) => counter + 1);
-			setCounter((counter) => counter + 1);
-			setCounter((counter) => counter + 1);
+			// setCounter(count + 1);
+
+			// setCounter(count + 1);
+
+			// setCounter(count + 1);
+
+			// setCounter(count + 1);
 		}
 	};
 
