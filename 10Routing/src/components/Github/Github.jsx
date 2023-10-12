@@ -1,11 +1,13 @@
 import React from "react";
-import { useLoaderData } from "react-router-dom";
+import { Route, Routes, useLoaderData } from "react-router-dom";
+import Login from "../Login/Login";
 
-function Github() {
+function Github(props) {
 	// useLoaderData is used to store data in a variable generated on calling loader Function
+
 	const data = useLoaderData();
 
-	return (
+	return props.authed ? (
 		<div className="text-center m-4 bg-slate-100 p-4 text-2xl ">
 			Github : {data.name}
 			<img
@@ -14,6 +16,11 @@ function Github() {
 				className="mx-auto my-2"
 			/>
 		</div>
+	) : (
+		<Login />
+		// <Routes>
+		// 	<Route path="login" element={<Login />} />
+		// </Routes>
 	);
 }
 
