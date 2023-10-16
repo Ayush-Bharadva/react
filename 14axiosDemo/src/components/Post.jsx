@@ -16,12 +16,12 @@ function Post() {
 				title: "Hello World!!",
 				body: "This is a new post",
 			})
-			// .then((response) => console.log(response.data));
-			// .then((response) => console.log(response.config));
-			// .then((response) => console.log(response.headers));
-			// .then((response) => console.log(response.request));
-			// .then((response) => console.log(response.status));
-			.then((response) => console.log(response.statusText));
+			.then((response) => console.log(response.data));
+		// .then((response) => console.log(response.config));
+		// .then((response) => console.log(response.headers));
+		// .then((response) => console.log(response.request));
+		// .then((response) => console.log(response.status));
+		// .then((response) => console.log(response.statusText));
 		console.log("new post created");
 	};
 
